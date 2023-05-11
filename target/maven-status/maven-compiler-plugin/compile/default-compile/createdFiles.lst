@@ -1,0 +1,9 @@
+ru\check_website\registration\HomePageLogin.class
+ru\check_website\driver\WebDriverCreator.class
+ru\check_website\api_user\User.class
+ru\check_website\enter\HomePageEnter.class
+ru\check_website\registration\HomePageRegistration.class
+ru\check_website\designer\HomePageDesigner.class
+ru\check_website\api_user\CreateUser.class
+ru\check_website\personal_account\HomePagePersonalAccount.class
+ru\check_website\api_user\GeneratorRandom.class
