@@ -1,0 +1,5 @@
+website_test\HomePageEnterTest.class
+website_test\HomePageDesignerTest.class
+website_test\HomePageRegistrationTest.class
+website_test\HomePagePersonalAccountTest.class
+website_test\TestBase.class
