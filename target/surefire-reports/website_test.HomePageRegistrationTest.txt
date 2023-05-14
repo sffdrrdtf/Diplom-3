@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: website_test.HomePageRegistrationTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.302 s - in website_test.HomePageRegistrationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.29 s - in website_test.HomePageRegistrationTest

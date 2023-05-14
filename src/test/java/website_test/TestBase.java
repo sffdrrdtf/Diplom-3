@@ -6,7 +6,12 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import ru.check_website.api_user.CreateUser;
 import ru.check_website.api_user.User;
+import ru.check_website.designer.HomePageDesigner;
 import ru.check_website.driver.WebDriverCreator;
+import ru.check_website.enter.HomePageEnter;
+import ru.check_website.personal_account.HomePagePersonalAccount;
+import ru.check_website.registration.HomePageLogin;
+import ru.check_website.registration.HomePageRegistration;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +21,11 @@ public class TestBase {
     public WebDriver driver;
     CreateUser createUser;
     User user = new User();
+    HomePageDesigner designer = new HomePageDesigner(driver);
+    HomePageEnter enter = new HomePageEnter(driver);
+    HomePagePersonalAccount account = new HomePagePersonalAccount(driver);
+    HomePageLogin login = new HomePageLogin(driver);
+    HomePageRegistration registration = new HomePageRegistration(driver);
 
     @Before
     public void startUp() {
@@ -25,6 +35,11 @@ public class TestBase {
         driver.navigate().to(MAIN_URL);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        designer = new HomePageDesigner(driver);
+        enter = new HomePageEnter(driver);
+        account = new HomePagePersonalAccount(driver);
+        login = new HomePageLogin(driver);
+        registration = new HomePageRegistration(driver);
     }
 
     @After
